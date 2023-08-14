@@ -97,7 +97,9 @@ const renderMovies = (movies) => {
 
         `;
 
+        
         const favouriteIconBtn = listItem.querySelector('.favourite-icon');
+        
 
         favouriteIconBtn.addEventListener('click', (event) => {
             // console.log(event.target)
@@ -113,6 +115,7 @@ const renderMovies = (movies) => {
                 addMovieNameToLocalStorage(id);
                 //add this class to favouriteIconBtn
                 favouriteIconBtn.classList.add("fa-solid");
+               
 
             }
         })
